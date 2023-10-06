@@ -18,13 +18,15 @@
 
 int resoudre(int a, int b, int c, float *x, float *y);
 
+// Pour compile it, you need to write: $ clang -Wall -std=c17 exo2.c -o exo2 -lm
+// $./exo2 < polynomes.txt
 
 int main(void){
     float r_un, r_deux;
-    int a = 0, b = 0, c = 0;
-    scanf(" %d ", &a);
-    scanf(" %d ", &b);
-    scanf(" %d ", &c);
+    int a, b, c;
+    scanf(" %d", &a);
+    scanf(" %d", &b);
+    scanf(" %d", &c);
     int res = resoudre(a, b, c, &r_un, &r_deux);
     switch (res){
         case 0: printf("0 solution\n"); break;

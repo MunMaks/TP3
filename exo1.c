@@ -27,6 +27,5 @@ int abs_first(int n){
 }
 
 void abs_second(int *n){
-    if (*n < 0) (*n) = -(*n); 
-    
+    if (*n < 0) (*n) = -(*n);
 }

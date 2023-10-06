@@ -36,11 +36,10 @@ void afficheTab(int tab[], int taille){
 void changeTab(int tab[], int taille, int indice){
     tab[indice] = 2;
     printf("Dans changeTab:\n");
-    printf("tab: %p, &tab[0]:%p\n", tab, &(tab[0]));
+    printf("tab: %p == &tab[0]: %p\n", tab, &(tab[0]));
 }
 
 void afficheTab_adr(int tab[], int taille){
     for (int i = 0; i < taille; ++i)
         printf("%p\n", &(tab[i]));
-    printf("\n");
 }
